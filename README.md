@@ -18,6 +18,10 @@ it also writes the hotkey into your compositor config for you.
 ![PyQt6](https://img.shields.io/badge/GUI-PyQt6-41cd52)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+<a href="https://cdn.jsdelivr.net/gh/FPP-Labs/linscreen@main/assets/linscreen-promo.mp4"><img src="assets/demo.gif" width="860" alt="Demo: press the hotkey, select an area, paste the screenshot into a chat"></a>
+
+<sub>▶ <a href="https://cdn.jsdelivr.net/gh/FPP-Labs/linscreen@main/assets/linscreen-promo.mp4">Watch the full video</a> (16 s, 1080p)</sub>
+
 </div>
 
 ---
