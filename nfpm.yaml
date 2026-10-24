@@ -1,0 +1,65 @@
+# Debian/Ubuntu (.deb) and Fedora/openSUSE (.rpm) packages, built by scripts/build-packages.sh.
+name: linscreen
+arch: all
+platform: linux
+version: ${VERSION}
+release: 1
+section: graphics
+priority: optional
+maintainer: FPP <fpphub@proton.me>
+description: |
+  Area screenshot tool for Linux (Wayland and X11).
+  Lives in the tray, captures an area on a hotkey, copies it to the clipboard
+  and saves it to ~/Pictures/LinScreen. Writes the hotkey into Hyprland, Sway,
+  i3 and Niri configs automatically.
+vendor: FPP-Labs
+homepage: https://github.com/FPP-Labs/linscreen
+license: MIT
+
+contents:
+  - src: ./linscreen.py
+    dst: /usr/bin/linscreen
+    file_info:
+      mode: 0755
+  - src: ./linscreen.desktop
+    dst: /usr/share/applications/linscreen.desktop
+  - src: ./linscreen.png
+    dst: /usr/share/pixmaps/linscreen.png
+  - src: ./linscreen.png
+    dst: /usr/share/icons/hicolor/256x256/apps/linscreen.png
+  - src: ./LICENSE
+    dst: /usr/share/licenses/linscreen/LICENSE
+    packager: rpm
+  - src: ./LICENSE
+    dst: /usr/share/doc/linscreen/copyright
+    packager: deb
+
+overrides:
+  deb:
+    depends:
+      - python3 (>= 3.10)
+      - python3-pyqt6
+    recommends:
+      - grim
+      - slurp
+      - wl-clipboard
+      - xdg-desktop-portal
+    suggests:
+      - maim
+      - scrot
+      - gnome-screenshot
+      - kde-spectacle
+  rpm:
+    depends:
+      - python3 >= 3.10
+      - python3-pyqt6
+    recommends:
+      - grim
+      - slurp
+      - wl-clipboard
+      - xdg-desktop-portal
+    suggests:
+      - maim
+      - scrot
+      - gnome-screenshot
+      - spectacle

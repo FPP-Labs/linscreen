@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=LinScreen
+GenericName=Screenshot Tool
+Comment=Area screenshots to clipboard and file, from the tray or a hotkey
+Exec=/usr/bin/linscreen
+Icon=linscreen
+Categories=Graphics;Utility;
+Keywords=screenshot;screen;capture;
+StartupNotify=false
+NoDisplay=false
+Actions=Screenshot;
+
+[Desktop Action Screenshot]
+Name=Take Screenshot
+Exec=/usr/bin/linscreen --screenshot

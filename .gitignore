@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+build/
+dist/
+
+pkg/
+src/
+*.pkg.tar.zst
+
+.codex
+.DS_Store
+
+screenshots/
+
+.venv*/
+.claude/

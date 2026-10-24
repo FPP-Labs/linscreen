@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest an idea for LinScreen
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like
+      description: Describe the problem it solves and how you would like it to work.
+    validations:
+      required: true
